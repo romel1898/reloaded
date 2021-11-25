@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+2&display=swap" rel="stylesheet">
+
+
+	<title>Prepara lo que quieras</title>
+</head>
+<style>
+	body{
+		font-family: 'M PLUS 2', sans-serif;
+	}
+	*{
+		padding: 0px;
+		margin: 0px;
+	}
+	
+	#container{
+		display: none;
+	}
+	.browser{
+	  width:500px;
+	  margin: auto;
+	  padding: 15px;
+
+
+	}
+	i{
+	 
+	  position:relative;
+	  top:5px;
+	  left:430px;
+	  color:gray;
+	}
+	input{
+	  width:450px;
+	  padding:10px;
+	  border-radius:15px;
+	  outline:none;
+	  border: none;
+	  transition:1s;
+	  position:absolute;
+	  border: 1px solid lightgrey;
+	 
+	   
+	 
+	}
+	 input:hover{
+	  box-shadow:5px 5px 15px -9px #000000;
+	} 
+	section{
+		padding: 10px;
+	}
+	.container {
+	  display: grid;
+	  grid-template-columns:auto auto auto;
+	  padding:10px;
+
+	 
+	}
+	.container div{
+	 box-shadow:5px 5px 15px -9px #000000;
+	  width: 400px;
+	  height: 650px;
+	  margin:30px auto 25px auto;
+	  
+
+	}
+	a{
+		text-decoration: none;
+		color: black;
+	}
+	.container div:hover{
+		transform: translateY(-2px);
+	}
+	section div ul{
+	   list-style:none;
+	}
+	section h2{
+		text-align: center;
+		margin-top: 15px;
+
+	}
+	section div ul li img{
+	  padding:0px;
+	  width:100%;
+	
+	}
+	section div ul li:nth-child(2){
+	  text-align:left;
+	  padding:10px;
+	}
+	section div ul li:nth-child(3){
+	  text-align:justify;
+	  padding:10px;
+	}
+	section div ul li:nth-child(4){
+	  text-align:left;
+	  padding:10px;
+	 
+	}
+	section div ul li button{
+	  background:#660f05;
+	  color:white;
+	  border:none;
+	  padding:10px;
+	  font-size:25px;
+	}
+	@media screen and (max-width: 599.98px){
+		.container{
+			grid-template-columns: auto;
+		}
+		.container div{
+			width: 100%;
+			
+		}
+
+		input{
+			width: 90%;
+		}
+		img{
+			width: 100%;
+		}
+		i{
+			left: 300px;
+		}
+	}
+</style>
+<body>
+	<header>
+	  <div class="browser">
+	  <input type="text" placeholder="Find your favorite cocktail" id="buscador">
+	  <i class="fa fa-search" onclick="buscar()"></i>
+	   </div>
+	</header>
+	<div id="container">
+	
+	<h1 id="drinkName"></h1>
+	<h2></h2>
+	<p id="instructions"> instructions</p>
+	</div>
+	<section>
+		<h2>Popular Cocktails</h2>
+	<div class="container" id="hide">
+
+	<div>
+		<a href="">
+	      <ul>
+	        <li><img src="https://www.thecocktaildb.com/images/media/drink/vrwquq1478252802.jpg" alt=""></li>
+	        <li><h1>Old Fashioned</h1></li>
+	        <li><p>The Bourbon Old Fashioned is one of the most classic whiskey cocktails of all time. It's just three ingredients, but bourbon lovers never tire of it.</p></li>
+	        <li><button>See More</button></li>
+	      </ul>
+	  </a>
+	    </div>
+	      
+	    <div>
+	      <a href="">	
+	      <ul>
+	        <li><img src="https://www.thecocktaildb.com/images/media/drink/qgdu971561574065.jpg" alt=""></li>
+	        <li><h1>Negroni</h1></li>
+	        <li><p>A Negroni is an Italian cocktail, made of one part gin, one part vermouth rosso, and one part Campari, garnished with orange peel. It is considered an aperitivo. </p></li>
+	        <li><button>See More</button></li>
+	      </ul>
+	     </a>
+	    </div>
+	    <div>
+	      <a href="">		
+	      <ul>
+	        <li><img src="https://www.thecocktaildb.com/images/media/drink/mrz9091589574515.jpg" alt=""></li>
+	        <li><h1>Daiquiri</h1></li>
+	        <li><p>Daiquiri is a family of cocktails whose main ingredients are rum, citrus juice, and sugar or other sweetener. </p></li>
+	        <li><button>See More</button></li>
+	      </ul>
+	      </a>
+	    </div>
+	    <div>
+	      <a href="">	
+	      <ul>
+	        <li><img src="https://www.thecocktaildb.com/images/media/drink/6ck9yi1589574317.jpg" alt=""></li>
+	        <li><h1>Dry Martini</h1></li>
+	        <li><p>The martini is a cocktail made with gin and vermouth, and garnished with an olive or a lemon twist. </p></li>
+	        <li><button>See More</button></li>
+	      </ul>
+	      </a>
+	    </div>
+	    <div>
+	      <a href="">		
+	      <ul>
+	        <li><img src="https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg" alt=""></li>
+	        <li><h1>Margarita</h1></li>
+	        <li><p> Margarita is a cocktail consisting of tequila, orange liqueur, and lime juice often served with salt on the rim of the glass. </p></li>
+	        <li><button>See More</button></li>
+	      </ul>
+	      </a>
+	    </div>
+	    <div>
+	      <a href="">	
+	      <ul>
+	        <li><img src="https://www.thecocktaildb.com/images/media/drink/n0sx531504372951.jpg" alt=""></li>
+	        <li><h1>Espresso Martini</h1></li>
+	        <li><p>The espresso martini is a cold, coffee-flavored cocktail made with vodka, espresso coffee, and coffee liqueur.  </p></li>
+	        <li><button>See More</button></li>
+	      </ul>
+	      </a>
+	    </div>
+	   </div> 
+	    </section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+<script>
+	
+
+	function cargar(){
+	let container=document.getElementById("container");
+	let buscador=document.querySelector("input").value;
+
+	fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${buscador}`)
+	.then(data => data.json())
+	.then(coktails =>{
+		let drink=coktails.drinks;
+		drink.map(()=>{
+			document.getElementById("hide").style.display="none";
+			document.getElementById("container").style.display="block";
+			document.getElementById('drinkName').innerHTML=drink[0].strDrink + "<br>"; 
+			let img=document.createElement('img');
+			img.src=drink[0].strDrinkThumb;
+			document.getElementById('drinkName').appendChild(img);
+			let ingrediente=document.createElement("h2");
+				ingrediente.innerHTML="Ingredientes";
+			document.getElementById('drinkName').appendChild(ingrediente);
+			document.getElementById("instructions").innerHTML=  drink[0].strInstructions;
+			for(let i=1; i < 16 ;i++){
+
+				if (drink[0][`strIngredient${i}`] == null) {
+					break;
+				};
+				let lista=document.createElement('li');
+				lista.innerHTML=drink[0][`strIngredient${i}`];
+				document.getElementById('drinkName').appendChild(lista);
+			}
+		});
+
+	});
+
+};
+$(document).ready(function(){
+		$("#buscador").on('keydown',function(e){
+			if(e.which == 13){
+				cargar();
+			};
+		});
+	});	
+	function buscar(){
+		cargar();
+
+		
+	};
+	
+</script>
+</body>
+</html>	
